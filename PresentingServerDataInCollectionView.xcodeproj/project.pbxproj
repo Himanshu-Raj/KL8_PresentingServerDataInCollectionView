@@ -15,6 +15,9 @@
 		9458809F201E655D00C0CAB8 /* ImgurCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9458809E201E655D00C0CAB8 /* ImgurCell.swift */; };
 		945880A1201E6A7600C0CAB8 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945880A0201E6A7600C0CAB8 /* NetworkingManager.swift */; };
 		945880A3201E6D5E00C0CAB8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945880A2201E6D5E00C0CAB8 /* Constants.swift */; };
+		945880A5201E746E00C0CAB8 /* GetImgurResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945880A4201E746E00C0CAB8 /* GetImgurResponse.swift */; };
+		94E626092020798500AD8DD3 /* Imgur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E626082020798500AD8DD3 /* Imgur.swift */; };
+		94E6260D2020805D00AD8DD3 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E6260C2020805D00AD8DD3 /* CustomError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		9458809E201E655D00C0CAB8 /* ImgurCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImgurCell.swift; sourceTree = "<group>"; };
 		945880A0201E6A7600C0CAB8 /* NetworkingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		945880A2201E6D5E00C0CAB8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		945880A4201E746E00C0CAB8 /* GetImgurResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetImgurResponse.swift; sourceTree = "<group>"; };
+		94E626082020798500AD8DD3 /* Imgur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Imgur.swift; sourceTree = "<group>"; };
+		94E6260C2020805D00AD8DD3 /* CustomError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,8 @@
 		9458809B201E64D000C0CAB8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				945880A4201E746E00C0CAB8 /* GetImgurResponse.swift */,
+				94E626082020798500AD8DD3 /* Imgur.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -100,7 +108,8 @@
 		9458809C201E64E700C0CAB8 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				945880A2201E6D5E00C0CAB8 /* Constants.swift */,
+				94E6260B2020803600AD8DD3 /* Enums */,
+				94E6260A2020802900AD8DD3 /* Constants */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -111,6 +120,22 @@
 				945880A0201E6A7600C0CAB8 /* NetworkingManager.swift */,
 			);
 			name = "Networking Manager";
+			sourceTree = "<group>";
+		};
+		94E6260A2020802900AD8DD3 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				945880A2201E6D5E00C0CAB8 /* Constants.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		94E6260B2020803600AD8DD3 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				94E6260C2020805D00AD8DD3 /* CustomError.swift */,
+			);
+			name = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,9 +211,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				945880A5201E746E00C0CAB8 /* GetImgurResponse.swift in Sources */,
+				94E6260D2020805D00AD8DD3 /* CustomError.swift in Sources */,
 				945880A3201E6D5E00C0CAB8 /* Constants.swift in Sources */,
 				94124664201E635800464166 /* ViewController.swift in Sources */,
 				945880A1201E6A7600C0CAB8 /* NetworkingManager.swift in Sources */,
+				94E626092020798500AD8DD3 /* Imgur.swift in Sources */,
 				94124662201E635800464166 /* AppDelegate.swift in Sources */,
 				9458809F201E655D00C0CAB8 /* ImgurCell.swift in Sources */,
 			);

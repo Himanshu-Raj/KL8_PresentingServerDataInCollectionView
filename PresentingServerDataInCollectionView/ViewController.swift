@@ -11,18 +11,26 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    var imgurs = [Imgur]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        NetworkingManager.shared.getImgurs { (success, imgurResponse, error) in
+            if success {
+                // print("Pheww...!! Made it to ViewDidLoad")
+                // print("Imgur Response : \(imgurResponse?.imgurs)")
+                self.imgurs = (imgurResponse?.imgurs)!
+                self.collectionView.reloadData()
+            } else if let error = error {
+                print("Error in View Did Load, Desc : \(error)")
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
 extension ViewController : UICollectionViewDataSource {
@@ -32,12 +40,12 @@ extension ViewController : UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return imgurs.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "imgurCell", for: indexPath) as? ImgurCell else { return UICollectionViewCell() }
-        cell.configure()
+        cell.configure(with : imgurs[indexPath.row])
         return cell
     }
 }

@@ -13,8 +13,7 @@ class ImgurCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var imageLabel: UILabel!
     
-    func configure() {
-        
+    func configure(with imgur : Imgur) {
+        imageLabel.text = imgur.title
     }
-    
 }

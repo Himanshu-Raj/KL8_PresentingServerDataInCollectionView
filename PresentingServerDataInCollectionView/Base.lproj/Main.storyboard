@@ -26,7 +26,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="nuY-fm-828"/>
                                 </constraints>
-                                <color key="barTintColor" red="0.14901960780000001" green="0.48627450979999998" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="1" green="0.090196078431372548" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </textAttributes>
@@ -35,8 +35,8 @@
                                 </items>
                             </navigationBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ooM-M0-3Io">
-                                <rect key="frame" x="0.0" y="60" width="320" height="508"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="10" y="70" width="300" height="488"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wTD-PQ-1DP">
                                     <size key="itemSize" width="120" height="120"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -60,10 +60,10 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="120" height="35"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVr-1X-PeM">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vVr-1X-PeM">
                                                                 <rect key="frame" x="4" y="4" width="112" height="27"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <color key="textColor" red="1" green="0.052511535230000003" blue="0.051847557019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
@@ -102,15 +102,15 @@
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="JZg-Ku-9Ip" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0U6-Me-lNe"/>
-                            <constraint firstItem="ooM-M0-3Io" firstAttribute="top" secondItem="JZg-Ku-9Ip" secondAttribute="bottom" id="BiY-if-b3a"/>
-                            <constraint firstItem="ooM-M0-3Io" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YxM-8G-7bE"/>
+                            <constraint firstAttribute="trailing" secondItem="ooM-M0-3Io" secondAttribute="trailing" constant="10" id="OuM-BT-guL"/>
+                            <constraint firstItem="ooM-M0-3Io" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="Yng-bg-gQb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ooM-M0-3Io" secondAttribute="bottom" constant="10" id="eCl-77-LV3"/>
                             <constraint firstAttribute="trailing" secondItem="JZg-Ku-9Ip" secondAttribute="trailing" id="kip-2A-2oM"/>
                             <constraint firstItem="JZg-Ku-9Ip" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="n37-oi-UUE"/>
-                            <constraint firstAttribute="trailing" secondItem="ooM-M0-3Io" secondAttribute="trailing" id="tHI-qT-G7H"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ooM-M0-3Io" secondAttribute="bottom" id="uAk-OW-nec"/>
+                            <constraint firstItem="ooM-M0-3Io" firstAttribute="top" secondItem="JZg-Ku-9Ip" secondAttribute="bottom" constant="10" id="ohv-gP-koH"/>
                         </constraints>
                     </view>
                     <connections>
