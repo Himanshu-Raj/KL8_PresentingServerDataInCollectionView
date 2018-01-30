@@ -30,6 +30,9 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
+        // Note: If we get memory warningm just clear all the items from the cache memory
+        imageCache.removeAllObjects()
     }
 }
 

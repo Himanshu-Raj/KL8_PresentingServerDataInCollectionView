@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct Imgur {
     
@@ -24,4 +25,27 @@ struct Imgur {
         self.title = title
         self.imageURL = imageURL
     }
+    
+    func getImage(completion : @escaping (UIImage) -> Void) {
+        
+        // Checking if image is already downloaded or not. If yes, we don't download it again. It not, proceed with downloading.
+        if let image = imageCache.image(forKey: id) {
+            completion(image)
+        } else {
+        NetworkingManager.shared.downloadImage(at: imageURL) { (success, downloadedImage, error) in
+            
+            if success {
+                if let image = downloadedImage {
+                    // Adding already downloaded image to image cache.
+                    imageCache.add(image, forKey: self.id)
+                    completion(image)
+                } else {
+                    print("Couldn't find image")
+                }
+            } else if let error = error {
+                print("Error in View Did Load, Desc : \(error)")
+            }
+         }
+       }
+     }
 }

@@ -8,7 +8,13 @@
 
 import Foundation
 
-typealias JSON = [String : Any]
 
-let BASE_URL = "https://api.imgur.com/3/gallery/r/"
-let USER_INPUTS = "cats"
+// MARK: Type-Aliases
+    typealias JSON = [String : Any]
+
+// MARK: URLs
+    let BASE_URL = "https://api.imgur.com/3/gallery/r/"
+    let USER_INPUTS = "cats"
+
+// Global Instances
+    let imageCache = ImageCache()

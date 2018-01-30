@@ -18,6 +18,7 @@
 		945880A5201E746E00C0CAB8 /* GetImgurResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945880A4201E746E00C0CAB8 /* GetImgurResponse.swift */; };
 		94E626092020798500AD8DD3 /* Imgur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E626082020798500AD8DD3 /* Imgur.swift */; };
 		94E6260D2020805D00AD8DD3 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E6260C2020805D00AD8DD3 /* CustomError.swift */; };
+		94E626102020B6A200AD8DD3 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E6260F2020B6A200AD8DD3 /* ImageCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		945880A4201E746E00C0CAB8 /* GetImgurResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetImgurResponse.swift; sourceTree = "<group>"; };
 		94E626082020798500AD8DD3 /* Imgur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Imgur.swift; sourceTree = "<group>"; };
 		94E6260C2020805D00AD8DD3 /* CustomError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		94E6260F2020B6A200AD8DD3 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		9458809C201E64E700C0CAB8 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				94E6260E2020B68300AD8DD3 /* ImageCache */,
 				94E6260B2020803600AD8DD3 /* Enums */,
 				94E6260A2020802900AD8DD3 /* Constants */,
 			);
@@ -136,6 +139,14 @@
 				94E6260C2020805D00AD8DD3 /* CustomError.swift */,
 			);
 			name = Enums;
+			sourceTree = "<group>";
+		};
+		94E6260E2020B68300AD8DD3 /* ImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				94E6260F2020B6A200AD8DD3 /* ImageCache.swift */,
+			);
+			name = ImageCache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +225,7 @@
 				945880A5201E746E00C0CAB8 /* GetImgurResponse.swift in Sources */,
 				94E6260D2020805D00AD8DD3 /* CustomError.swift in Sources */,
 				945880A3201E6D5E00C0CAB8 /* Constants.swift in Sources */,
+				94E626102020B6A200AD8DD3 /* ImageCache.swift in Sources */,
 				94124664201E635800464166 /* ViewController.swift in Sources */,
 				945880A1201E6A7600C0CAB8 /* NetworkingManager.swift in Sources */,
 				94E626092020798500AD8DD3 /* Imgur.swift in Sources */,
